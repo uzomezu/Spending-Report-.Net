@@ -1,0 +1,15 @@
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\bin\Debug\net6.0\Spending-And-Shopping.exe
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\bin\Debug\net6.0\Spending-And-Shopping.deps.json
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\bin\Debug\net6.0\Spending-And-Shopping.runtimeconfig.json
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\bin\Debug\net6.0\Spending-And-Shopping.dll
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\bin\Debug\net6.0\Spending-And-Shopping.pdb
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\Spending-And-Shopping.csproj.AssemblyReference.cache
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\Spending-And-Shopping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\Spending-And-Shopping.AssemblyInfoInputs.cache
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\Spending-And-Shopping.AssemblyInfo.cs
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\Spending-And-Shopping.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\Spending-And-Shopping.dll
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\refint\Spending-And-Shopping.dll
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\Spending-And-Shopping.pdb
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\Spending-And-Shopping.genruntimeconfig.cache
+C:\Users\Kevin Mezu\Documents\AcroMinutiae\Spending-And-Shopping\obj\Debug\net6.0\ref\Spending-And-Shopping.dll
