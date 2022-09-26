@@ -4,7 +4,7 @@ namespace BankStatement.Model
     {
         public DateTime Date{get;set;}
         public string Desc{get;set;}
-        public string Debit{get;set;}
-        public string Credit{get;set;}
+        public double Debit{get;set;}
+        public double Credit{get;set;}
     }
 }

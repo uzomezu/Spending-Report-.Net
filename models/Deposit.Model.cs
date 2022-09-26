@@ -6,17 +6,19 @@ namespace Deposit
         private string desc = String.Empty;
         public DateTime Date{get;set;}
         public string Desc{get;set;}
-        public string Debit{get=>"0";set=>value="0";}
+        public double Debit{get=>0.0;set=>value=0.0;}
 
-        public string Credit{get;set;}
+        public double Credit{get;set;}
 
-        public Deposit(){}
+        public Deposit(){
+            Desc = "No Purchase Made";
+        }
 
-        public Deposit(DateTime date, string desc, string credit){
+        public Deposit(DateTime date, string desc, double credit){
             Credit = credit;
             Date = date;
             Desc = desc;
-            Debit = "0";
+            Debit = 0.0;
         }
     }
 }

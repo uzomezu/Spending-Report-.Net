@@ -9,7 +9,7 @@ using Transaction;
 using Deposit;
 using Date.Format;
 
-var fileName = "./transactions.CSV";
+var fileName = "./data/transactions.CSV";
 List<BankStatement.Model.BankStatement> statements = new List<BankStatement.Model.BankStatement>();
 try
         {
@@ -25,13 +25,13 @@ try
                 {
                     if(tick>0){
                         var row = line.Split(',');
-                        
                         DateTime date = DateTime.Parse(row[0].Trim());
-                        if (row[2].Contains("Deposit")){
-                            statements.Add(new Deposit.Deposit(date, row[2], row[4]));                           
+                        if (row[4] != ""){
+                            statements.Add(new Deposit.Deposit(date, row[2], Double.Parse(row[4])));
                         } else {
-                            statements.Add(new Transaction.Transaction(date, row[2], row[3]));
+                            statements.Add(new Transaction.Transaction(date, row[2], Double.Parse(row[3])));
                         }
+
                     }
                     tick++;
                 }
@@ -44,11 +44,21 @@ try
             Console.WriteLine(e.Message);
         }
 
+/*
+Test Query: Acknowledging that bank statements from stores 
+like Walmart or Target contain the same query paramter of {{StoreName || StoreWebsite}} in all caps Standard case
+*/
 var query = (from statement in statements
-             where statement.Desc.Contains("WALMARTCOM")
+             where statement.Desc.Contains("WALMARTCOM") 
              || statement.Desc.Contains("Walmart")
-             select statement.Debit);
+             group statement by statement.Date.Month into byDate
+             orderby byDate.Key
+             select byDate).ToList(); // Placing these walmart purchases I've made into Queryable Lists
 
-foreach (var num in query){
-    Console.WriteLine(num);
+foreach(var item in query){
+    var avg = (from s in item select s.Debit).ToList().Average();
+    var totalSpent = (from s in item select s.Debit).ToList().Sum();
+    Console.WriteLine(
+        $"Month: {item.Key}\nAverage Spent: {avg}\nTotal Spent: {totalSpent}\nNumber of Purchases: {item.Count()}\n"
+        );
 }
